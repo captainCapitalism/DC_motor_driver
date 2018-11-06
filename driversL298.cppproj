@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.CPP</ToolchainName>
+    <ProjectGuid>{95c1f20c-360c-4fc6-816f-a7c06ebc3e71}</ProjectGuid>
+    <avrdevice>ATmega2560</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>driversL298</AssemblyName>
+    <Name>driversL298</Name>
+    <RootNamespace>driversL298</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <CacheFlash>true</CacheFlash>
+    <UncachedRange />
+    <BootSegment>0</BootSegment>
+    <AsfFrameworkConfig>
+      <framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.25.0" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <preserveEEPROM>true</preserveEEPROM>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>ARDUINO=106010</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=84000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__SAM__</Value>
+      <Value>ARDUINO_SAM_DUE</Value>
+      <Value>ARDUINO_ARCH_SAM</Value>
+      <Value>__SAM3X8E__</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x003e</Value>
+      <Value>USBCON</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>C:/Arduino/libraries</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/libraries</Value>
+      <Value>C:/Users/Michał/Documents/Arduino/libraries</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/cores/arduino</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/cores/arduino/avr</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/cores/arduino/USB</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/variants/arduino_due_x</Value>
+      <Value>../../../driversL298</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/libsam</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/CMSIS/Include/</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/Device/ATMEL/</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3/arm-none-eabi/</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/lib/gcc/arm-none-eabi/4.8.3/include</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/libsam/include</Value>
+      <Value>C:/Arduino/hardware/tools/g++_arm_none_eabi/arm-none-eabi/include</Value>
+      <Value>C:/Arduino/hardware/tools/g++_arm_none_eabi/arm_none_eabi/include/</Value>
+      <Value>C:/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include</Value>
+      <Value>C:/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include/</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/Device/ATMEL/sam3xa/include/pio</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/CMSIS/CMSIS/Include/</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/Device/ATMEL/sam3xa/include</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/Device/ATMEL</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>ARDUINO=106010</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=84000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__SAM__</Value>
+      <Value>ARDUINO_SAM_DUE</Value>
+      <Value>ARDUINO_ARCH_SAM</Value>
+      <Value>__SAM3X8E__</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x003e</Value>
+      <Value>USBCON</Value>
+    </ListValues>
+  </avrgcccpp.compiler.symbols.DefSymbols>
+  <avrgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>C:/Arduino/libraries</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/libraries</Value>
+      <Value>C:/Users/Michał/Documents/Arduino/libraries</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/cores/arduino</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/cores/arduino/avr</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/cores/arduino/USB</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/variants/arduino_due_x</Value>
+      <Value>../../../driversL298</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/libsam</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/CMSIS/Include/</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/Device/ATMEL/</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3/arm-none-eabi/</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/lib/gcc/arm-none-eabi/4.8.3/include</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/libsam/include</Value>
+      <Value>C:/Arduino/hardware/tools/g++_arm_none_eabi/arm-none-eabi/include</Value>
+      <Value>C:/Arduino/hardware/tools/g++_arm_none_eabi/arm_none_eabi/include/</Value>
+      <Value>C:/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include</Value>
+      <Value>C:/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include/</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/Device/ATMEL/sam3xa/include/pio</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/CMSIS/CMSIS/Include/</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/Device/ATMEL/sam3xa/include</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/Device/ATMEL</Value>
+    </ListValues>
+  </avrgcccpp.compiler.directories.IncludePaths>
+  <avrgcccpp.compiler.optimization.level>Optimize (-O1)</avrgcccpp.compiler.optimization.level>
+  <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+  <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
+  <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+  <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+</AvrGccCpp>
+    </ToolchainSettings>
+    <VMSETTING_IncludePaths>q:/Arduino/libraries;q:/Arduino/hardware/arduino/avr/libraries;C:/Users/User/Documents/Arduino/libraries;q:/Arduino/hardware/arduino/avr/cores/arduino;q:/Arduino/hardware/arduino/avr/variants/standard;../../../driversL298;q:/Arduino/hardware/tools/avr/avr/include/;q:/Arduino/hardware/tools/avr/avr/include/avr/;q:/Arduino/hardware/tools/avr/lib/gcc/avr/4.8.1/include;q:/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.2/include;q:/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.3/include;q:/programs/arduino/libraries;q:/programs/arduino/hardware/arduino/avr/libraries;q:/programs/arduino/hardware/arduino/avr/cores/arduino;q:/programs/arduino/hardware/arduino/avr/variants/standard;q:/programs/arduino/hardware/tools/avr/avr/include/;q:/programs/arduino/hardware/tools/avr/avr/include/avr/;q:/programs/arduino/hardware/tools/avr/lib/gcc/avr/4.8.1/include;q:/programs/arduino/hardware/tools/avr/lib/gcc/avr/4.9.2/include;q:/programs/arduino/hardware/tools/avr/lib/gcc/avr/4.9.3/include;C:/Arduino/libraries;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/libraries;C:/Users/Michał/Documents/Arduino/libraries;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/cores/arduino;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/cores/arduino/avr;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/cores/arduino/USB;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/variants/arduino_due_x;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/libsam;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/CMSIS/Include/;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/Device/ATMEL/;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3/arm-none-eabi/;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/lib/gcc/arm-none-eabi/4.8.3/include;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/libsam/include;C:/Arduino/hardware/tools/g++_arm_none_eabi/arm-none-eabi/include;C:/Arduino/hardware/tools/g++_arm_none_eabi/arm_none_eabi/include/;C:/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include;C:/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include/;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/Device/ATMEL/sam3xa/include/pio;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/CMSIS/CMSIS/Include/;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/Device/ATMEL/sam3xa/include;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/Device/ATMEL;</VMSETTING_IncludePaths>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>ARDUINO=106010</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=84000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__SAM__</Value>
+      <Value>ARDUINO_SAM_DUE</Value>
+      <Value>ARDUINO_ARCH_SAM</Value>
+      <Value>__SAM3X8E__</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x003e</Value>
+      <Value>USBCON</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>C:/Arduino/libraries</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/libraries</Value>
+      <Value>C:/Users/Michał/Documents/Arduino/libraries</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/cores/arduino</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/cores/arduino/avr</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/cores/arduino/USB</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/variants/arduino_due_x</Value>
+      <Value>../../../driversL298</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/libsam</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/CMSIS/Include/</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/Device/ATMEL/</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3/arm-none-eabi/</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/lib/gcc/arm-none-eabi/4.8.3/include</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/libsam/include</Value>
+      <Value>C:/Arduino/hardware/tools/g++_arm_none_eabi/arm-none-eabi/include</Value>
+      <Value>C:/Arduino/hardware/tools/g++_arm_none_eabi/arm_none_eabi/include/</Value>
+      <Value>C:/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include</Value>
+      <Value>C:/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include/</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/Device/ATMEL/sam3xa/include/pio</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/CMSIS/CMSIS/Include/</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/Device/ATMEL/sam3xa/include</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/Device/ATMEL</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>ARDUINO=106010</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=84000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__SAM__</Value>
+      <Value>ARDUINO_SAM_DUE</Value>
+      <Value>ARDUINO_ARCH_SAM</Value>
+      <Value>__SAM3X8E__</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x003e</Value>
+      <Value>USBCON</Value>
+    </ListValues>
+  </avrgcccpp.compiler.symbols.DefSymbols>
+  <avrgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>C:/Arduino/libraries</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/libraries</Value>
+      <Value>C:/Users/Michał/Documents/Arduino/libraries</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/cores/arduino</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/cores/arduino/avr</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/cores/arduino/USB</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/variants/arduino_due_x</Value>
+      <Value>../../../driversL298</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/libsam</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/CMSIS/Include/</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/Device/ATMEL/</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3/arm-none-eabi/</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/lib/gcc/arm-none-eabi/4.8.3/include</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/libsam/include</Value>
+      <Value>C:/Arduino/hardware/tools/g++_arm_none_eabi/arm-none-eabi/include</Value>
+      <Value>C:/Arduino/hardware/tools/g++_arm_none_eabi/arm_none_eabi/include/</Value>
+      <Value>C:/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include</Value>
+      <Value>C:/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include/</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/Device/ATMEL/sam3xa/include/pio</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/CMSIS/CMSIS/Include/</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/Device/ATMEL/sam3xa/include</Value>
+      <Value>C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/Device/ATMEL</Value>
+    </ListValues>
+  </avrgcccpp.compiler.directories.IncludePaths>
+  <avrgcccpp.compiler.optimization.level>Optimize (-O1)</avrgcccpp.compiler.optimization.level>
+  <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+  <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
+  <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+  <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+</AvrGccCpp>
+    </ToolchainSettings>
+    <VMSETTING_IncludePaths>q:/Arduino/libraries;q:/Arduino/hardware/arduino/avr/libraries;C:/Users/User/Documents/Arduino/libraries;q:/Arduino/hardware/arduino/avr/cores/arduino;q:/Arduino/hardware/arduino/avr/variants/standard;../../../driversL298;q:/Arduino/hardware/tools/avr/avr/include/;q:/Arduino/hardware/tools/avr/avr/include/avr/;q:/Arduino/hardware/tools/avr/lib/gcc/avr/4.8.1/include;q:/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.2/include;q:/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.3/include;q:/programs/arduino/libraries;q:/programs/arduino/hardware/arduino/avr/libraries;q:/programs/arduino/hardware/arduino/avr/cores/arduino;q:/programs/arduino/hardware/arduino/avr/variants/standard;q:/programs/arduino/hardware/tools/avr/avr/include/;q:/programs/arduino/hardware/tools/avr/avr/include/avr/;q:/programs/arduino/hardware/tools/avr/lib/gcc/avr/4.8.1/include;q:/programs/arduino/hardware/tools/avr/lib/gcc/avr/4.9.2/include;q:/programs/arduino/hardware/tools/avr/lib/gcc/avr/4.9.3/include;C:/Arduino/libraries;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/libraries;C:/Users/Michał/Documents/Arduino/libraries;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/cores/arduino;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/cores/arduino/avr;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/cores/arduino/USB;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/variants/arduino_due_x;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/libsam;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/CMSIS/Include/;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/Device/ATMEL/;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3/arm-none-eabi/;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/lib/gcc/arm-none-eabi/4.8.3/include;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/libsam/include;C:/Arduino/hardware/tools/g++_arm_none_eabi/arm-none-eabi/include;C:/Arduino/hardware/tools/g++_arm_none_eabi/arm_none_eabi/include/;C:/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include;C:/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include/;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/Device/ATMEL/sam3xa/include/pio;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/CMSIS/CMSIS/Include/;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/Device/ATMEL/sam3xa/include;C:/Users/Michał/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.9/system/CMSIS/Device/ATMEL;</VMSETTING_IncludePaths>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Debug\board.buildinfo">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Debug\core.a">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Debug\driversL298.elf">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Debug\driversL298.hex">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Debug\driversL298.ino.elf">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Debug\driversL298.ino.hex">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Debug\driversL298.ino.with_bootloader.hex">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Debug\driversL298.with_bootloader.hex">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="driversL298.atsln">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="driversL298.componentinfo.xml">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="driversL298.ino">
+      <SubType>compile</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="config\" />
+    <Folder Include="Debug\" />
+    <Folder Include="documentation\" />
+    <Folder Include="headers\" />
+    <Folder Include="sources\" />
+    <Folder Include="__vm\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="config\config.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="headers\driver.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="headers\encoder.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="headers\fuzzyDriver.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="headers\pid.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="headers\pidDriver.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="headers\TimersMillis.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="sources\config.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="sources\driver.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="sources\encoder.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="sources\fuzzyDriver.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="sources\pid.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="sources\pidDriver.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="sources\TimersMillis.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="__vm\.driversL298.vsarduino.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
